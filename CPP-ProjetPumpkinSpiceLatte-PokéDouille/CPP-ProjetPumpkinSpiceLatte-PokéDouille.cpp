@@ -1,20 +1,60 @@
-// CPP-ProjetPumpkinSpiceLatte-PokéDouille.cpp : Ce fichier contient la fonction 'main'. L'exécution du programme commence et se termine à cet endroit.
-//
+// CPP-ProjetPumpkinSpiceLatte-PokéDouille.cpp
 
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include "PokeDouille.hpp"
+#include "FastAttack.hpp"
+#include "Fireball.hpp"
 
-int main()
-{
-    std::cout << "Hello World!\n";
+int main() {
+    srand(static_cast<unsigned>(time(0)));
+
+    PokeDouille player("Pikadouille", 50);
+    PokeDouille enemy("Salamouchette", 50);
+
+    FastAttack fast;
+    Fireball fire;
+
+    player.addAttack(&fast);
+    player.addAttack(&fire);
+
+    enemy.addAttack(&fast);
+    enemy.addAttack(&fire);
+
+
+    std::cout << "=== Combat Poké Douille ===\n";
+
+    while (player.getHp() > 0 && enemy.getHp() > 0) {
+        // --- Tour du joueur ---
+        std::cout << "\nTes PV : " << player.getHp()
+            << " | PV ennemi : " << enemy.getHp() << "\n";
+        std::cout << "Choisis une attaque :\n";
+        for (size_t i = 0; i < 2; ++i) {
+            std::cout << i << " - " << player.chooseAttack(i)->getName() << "\n";
+        }
+
+        int choice;
+        std::cin >> choice;
+
+        if (choice < 0 || choice > 1) choice = 0;
+        Attack* atk = player.chooseAttack(choice);
+        atk->execute(&player, &enemy);
+
+        if (enemy.getHp() <= 0) break;
+
+        // --- Tour de l'ennemi ---
+        int enemyChoice = rand() % 2;
+        Attack* enemyAtk = enemy.chooseAttack(enemyChoice);
+        enemyAtk->execute(&enemy, &player);
+    }
+
+    if (player.getHp() > 0) {
+        std::cout << "\nTu as gagné ! \n";
+    }
+    else {
+        std::cout << "\nTu as perdu... \n";
+    }
+
+    return 0;
 }
-
-// Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
-// Déboguer le programme : F5 ou menu Déboguer > Démarrer le débogage
-
-// Astuces pour bien démarrer : 
-//   1. Utilisez la fenêtre Explorateur de solutions pour ajouter des fichiers et les gérer.
-//   2. Utilisez la fenêtre Team Explorer pour vous connecter au contrôle de code source.
-//   3. Utilisez la fenêtre Sortie pour voir la sortie de la génération et d'autres messages.
-//   4. Utilisez la fenêtre Liste d'erreurs pour voir les erreurs.
-//   5. Accédez à Projet > Ajouter un nouvel élément pour créer des fichiers de code, ou à Projet > Ajouter un élément existant pour ajouter des fichiers de code existants au projet.
-//   6. Pour rouvrir ce projet plus tard, accédez à Fichier > Ouvrir > Projet et sélectionnez le fichier .sln.

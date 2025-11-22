@@ -13,10 +13,39 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Fichiers sources\StrategyPattern">
+      <UniqueIdentifier>{f7e51938-b868-4aee-838e-b4d301238616}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\StrategyPattern">
+      <UniqueIdentifier>{605aaba6-9c5c-4fad-bae7-1b3fefaa8ea8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CPP-ProjetPumpkinSpiceLatte-PokéDouille.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
+    <ClCompile Include="FastAttack.cpp">
+      <Filter>Fichiers sources\StrategyPattern</Filter>
+    </ClCompile>
+    <ClCompile Include="Pokedouille.cpp">
+      <Filter>Fichiers sources\StrategyPattern</Filter>
+    </ClCompile>
+    <ClCompile Include="Fireball.cpp">
+      <Filter>Fichiers sources\StrategyPattern</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Attack.hpp">
+      <Filter>Fichiers d%27en-tête\StrategyPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="FastAttack.hpp">
+      <Filter>Fichiers d%27en-tête\StrategyPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Pokedouille.hpp">
+      <Filter>Fichiers d%27en-tête\StrategyPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Fireball.hpp">
+      <Filter>Fichiers d%27en-tête\StrategyPattern</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
