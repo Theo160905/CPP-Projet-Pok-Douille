@@ -1,14 +1,11 @@
 // CPP-ProjetPumpkinSpiceLatte-PokéDouille.cpp
 
 #include <iostream>
-#include <cstdlib>
-#include <ctime>
 #include "PokeDouille.hpp"
 #include "FastAttack.hpp"
 #include "Fireball.hpp"
 
 int main() {
-    srand(static_cast<unsigned>(time(0)));
 
     PokeDouille player("Pikadouille", 50);
     PokeDouille enemy("Salamouchette", 50);
@@ -23,7 +20,7 @@ int main() {
     enemy.addAttack(&fire);
 
 
-    std::cout << "=== Combat Poké Douille ===\n";
+    std::cout << "=== Combat Poke Douille ===\n";
 
     while (player.getHp() > 0 && enemy.getHp() > 0) {
         // --- Tour du joueur ---
@@ -50,7 +47,7 @@ int main() {
     }
 
     if (player.getHp() > 0) {
-        std::cout << "\nTu as gagné ! \n";
+        std::cout << "\nTu as gagne ! \n";
     }
     else {
         std::cout << "\nTu as perdu... \n";

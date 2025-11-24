@@ -5,9 +5,7 @@
 void FastAttack::execute(PokeDouille* attacker, PokeDouille* defender) {
     int damage = 10;
     defender->takeDamage(damage);
-    std::cout << attacker->getName() << " utilise " << getName()
-        << " et inflige " << damage << " dégâts à "
-        << defender->getName() << "!\n";
+    std::cout << attacker->getName() << " utilise " << getName()<< " et inflige " << damage << " degats à " << defender->getName() << "!\n";
 }
 
 std::string FastAttack::getName() const {
