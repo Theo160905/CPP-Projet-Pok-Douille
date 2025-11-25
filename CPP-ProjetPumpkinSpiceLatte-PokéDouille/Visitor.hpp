@@ -9,22 +9,22 @@ class Grass;
 
 class Visitor
 {
-public :
-	virtual void VisitFire(const Fire *ty) const = 0;
-	virtual void VisitWater(const Water *ty) const = 0;
-	virtual void VisitGrassC(const Grass *ty) const = 0;
+public:
+	virtual void VisitFire(const Fire* ty) const = 0;
+	virtual void VisitWater(const Water* ty) const = 0;
+	virtual void VisitGrass(const Grass* ty) const = 0;
 };
 
 class Type
 {
-public :
+public:
 	virtual ~Type() {}
 	virtual void Accept(Visitor* visitor) const = 0;
 };
 
 class Fire : public Type
 {
-public :
+public:
 	virtual void Accept(Visitor* visitor) const override {
 		visitor->VisitFire(this);
 	};
@@ -55,7 +55,7 @@ public:
 	};
 };
 
-class VisitorFire : public Visitor 
+class VisitorFire : public Visitor
 {
 public:
 	void VisitFire(const Fire* som) const {
