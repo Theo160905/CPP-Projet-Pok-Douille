@@ -131,12 +131,14 @@
     <ClCompile Include="FastAttack.cpp" />
     <ClCompile Include="Fireball.cpp" />
     <ClCompile Include="Pokedouille.cpp" />
+    <ClCompile Include="Visitor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Attack.hpp" />
     <ClInclude Include="FastAttack.hpp" />
     <ClInclude Include="Fireball.hpp" />
     <ClInclude Include="Pokedouille.hpp" />
+    <ClInclude Include="Visitor.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
