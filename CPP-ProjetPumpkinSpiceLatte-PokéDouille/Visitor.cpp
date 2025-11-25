@@ -2,16 +2,16 @@
 
 #include <iostream>
 #include <array>
-#include "Visitor.h"
+#include "Visitor.hpp"
 
-int main2()
+int main()
 {
-	std::array<const Type*, 3> types = {new Fire, new Water, new Grass};
-	VisitorFire *v1 = new VisitorFire;
-	VisitorWater *v2 = new VisitorWater;
-	VisitorGrass *v3 = new VisitorGrass;
+	std::array<const Type*, 3> types = { new Fire, new Water, new Grass };
+	VisitorFire* v1 = new VisitorFire;
+	VisitorWater* v2 = new VisitorWater;
+	VisitorGrass* v3 = new VisitorGrass;
 
-	for (const Type* ty : types) 
+	for (const Type* ty : types)
 	{
 		ty->Accept(v1);
 	}
@@ -25,7 +25,7 @@ int main2()
 	}
 
 	//cleanup
-	for (const Type* ty : types) 
+	for (const Type* ty : types)
 	{
 		delete ty;
 	}
