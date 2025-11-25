@@ -4,7 +4,7 @@
 #include <array>
 #include "Visitor.hpp"
 
-int main()
+int main2()
 {
 	std::array<const Type*, 3> types = { new Fire, new Water, new Grass };
 	VisitorFire* v1 = new VisitorFire;
