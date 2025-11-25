@@ -19,6 +19,9 @@
     <Filter Include="Fichiers d%27en-tête\StrategyPattern">
       <UniqueIdentifier>{605aaba6-9c5c-4fad-bae7-1b3fefaa8ea8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\StatePattern">
+      <UniqueIdentifier>{88a278f6-af34-4a0d-80b9-0a46de2c724d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CPP-ProjetPumpkinSpiceLatte-PokéDouille.cpp">
@@ -46,6 +49,9 @@
     </ClInclude>
     <ClInclude Include="Fireball.hpp">
       <Filter>Fichiers d%27en-tête\StrategyPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleState.hpp">
+      <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

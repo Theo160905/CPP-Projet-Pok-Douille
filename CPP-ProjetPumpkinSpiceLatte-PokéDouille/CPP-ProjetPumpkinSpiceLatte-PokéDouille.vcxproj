@@ -134,6 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Attack.hpp" />
+    <ClInclude Include="BattleState.hpp" />
     <ClInclude Include="FastAttack.hpp" />
     <ClInclude Include="Fireball.hpp" />
     <ClInclude Include="Pokedouille.hpp" />

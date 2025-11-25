@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\bobyj\\Desktop\\Cours\\C\u002B\u002B\\CPP-Projet-PokeDouille\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F72D2DD0-A31E-4702-8A8F-52DCF12154B0}|CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille.vcxproj|C:\\Users\\bobyj\\Desktop\\Cours\\C\u002B\u002B\\CPP-Projet-PokeDouille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\BattleState.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F72D2DD0-A31E-4702-8A8F-52DCF12154B0}|CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille.vcxproj|solutionrelative:CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\BattleState.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F72D2DD0-A31E-4702-8A8F-52DCF12154B0}|CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille.vcxproj|C:\\Users\\bobyj\\Desktop\\Cours\\C\u002B\u002B\\CPP-Projet-PokeDouille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F72D2DD0-A31E-4702-8A8F-52DCF12154B0}|CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille.vcxproj|solutionrelative:CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F72D2DD0-A31E-4702-8A8F-52DCF12154B0}|CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille.vcxproj|C:\\Users\\bobyj\\Desktop\\Cours\\C\u002B\u002B\\CPP-Projet-PokeDouille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\Fireball.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F72D2DD0-A31E-4702-8A8F-52DCF12154B0}|CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille.vcxproj|solutionrelative:CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\Fireball.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F72D2DD0-A31E-4702-8A8F-52DCF12154B0}|CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille.vcxproj|C:\\Users\\bobyj\\Desktop\\Cours\\C\u002B\u002B\\CPP-Projet-PokeDouille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\FastAttack.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F72D2DD0-A31E-4702-8A8F-52DCF12154B0}|CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille.vcxproj|solutionrelative:CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\FastAttack.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F72D2DD0-A31E-4702-8A8F-52DCF12154B0}|CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille.vcxproj|C:\\Users\\bobyj\\Desktop\\Cours\\C\u002B\u002B\\CPP-Projet-PokeDouille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\Fireball.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F72D2DD0-A31E-4702-8A8F-52DCF12154B0}|CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille.vcxproj|solutionrelative:CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\Fireball.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,34 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FastAttack.cpp",
-              "DocumentMoniker": "C:\\Users\\bobyj\\Desktop\\Cours\\C\u002B\u002B\\CPP-Projet-PokeDouille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\FastAttack.cpp",
-              "RelativeDocumentMoniker": "CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\FastAttack.cpp",
-              "ToolTip": "C:\\Users\\bobyj\\Desktop\\Cours\\C\u002B\u002B\\CPP-Projet-PokeDouille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\FastAttack.cpp",
-              "RelativeToolTip": "CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\FastAttack.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-24T09:30:17.014Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Fireball.cpp",
-              "DocumentMoniker": "C:\\Users\\bobyj\\Desktop\\Cours\\C\u002B\u002B\\CPP-Projet-PokeDouille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\Fireball.cpp",
-              "RelativeDocumentMoniker": "CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\Fireball.cpp",
-              "ToolTip": "C:\\Users\\bobyj\\Desktop\\Cours\\C\u002B\u002B\\CPP-Projet-PokeDouille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\Fireball.cpp",
-              "RelativeToolTip": "CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\Fireball.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-24T09:29:45.665Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{5a4e9529-b6a0-46b5-be4f-0f0b239bc0eb}"
@@ -65,15 +43,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "BattleState.hpp",
+              "DocumentMoniker": "C:\\Users\\bobyj\\Desktop\\Cours\\C\u002B\u002B\\CPP-Projet-PokeDouille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\BattleState.hpp",
+              "RelativeDocumentMoniker": "CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\BattleState.hpp",
+              "ToolTip": "C:\\Users\\bobyj\\Desktop\\Cours\\C\u002B\u002B\\CPP-Projet-PokeDouille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\BattleState.hpp",
+              "RelativeToolTip": "CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\BattleState.hpp",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAFUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-25T09:10:48.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille.cpp",
               "DocumentMoniker": "C:\\Users\\bobyj\\Desktop\\Cours\\C\u002B\u002B\\CPP-Projet-PokeDouille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille.cpp",
               "RelativeDocumentMoniker": "CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille.cpp",
               "ToolTip": "C:\\Users\\bobyj\\Desktop\\Cours\\C\u002B\u002B\\CPP-Projet-PokeDouille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille.cpp",
               "RelativeToolTip": "CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-22T15:28:25.321Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FastAttack.cpp",
+              "DocumentMoniker": "C:\\Users\\bobyj\\Desktop\\Cours\\C\u002B\u002B\\CPP-Projet-PokeDouille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\FastAttack.cpp",
+              "RelativeDocumentMoniker": "CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\FastAttack.cpp",
+              "ToolTip": "C:\\Users\\bobyj\\Desktop\\Cours\\C\u002B\u002B\\CPP-Projet-PokeDouille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\FastAttack.cpp",
+              "RelativeToolTip": "CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\FastAttack.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-24T09:30:17.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Fireball.cpp",
+              "DocumentMoniker": "C:\\Users\\bobyj\\Desktop\\Cours\\C\u002B\u002B\\CPP-Projet-PokeDouille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\Fireball.cpp",
+              "RelativeDocumentMoniker": "CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\Fireball.cpp",
+              "ToolTip": "C:\\Users\\bobyj\\Desktop\\Cours\\C\u002B\u002B\\CPP-Projet-PokeDouille\\CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\Fireball.cpp",
+              "RelativeToolTip": "CPP-ProjetPumpkinSpiceLatte-Pok\u00E9Douille\\Fireball.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-24T09:29:45.665Z"
             }
           ]
         }

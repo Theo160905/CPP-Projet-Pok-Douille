@@ -4,8 +4,9 @@
 #include "PokeDouille.hpp"
 #include "FastAttack.hpp"
 #include "Fireball.hpp"
+#include "BattleState.hpp"
 
-int main() {
+int main1() {
 
     PokeDouille player("Pikadouille", 50);
     PokeDouille enemy("Salamouchette", 50);
@@ -53,5 +54,10 @@ int main() {
         std::cout << "\nTu as perdu... \n";
     }
 
+    return 0;
+}
+
+int main() {
+    ClientCode();
     return 0;
 }
