@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Fichiers sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de ressources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Fichiers sources\StrategyPattern">
+      <UniqueIdentifier>{f7e51938-b868-4aee-838e-b4d301238616}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\StrategyPattern">
+      <UniqueIdentifier>{605aaba6-9c5c-4fad-bae7-1b3fefaa8ea8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\StatePattern">
+      <UniqueIdentifier>{88a278f6-af34-4a0d-80b9-0a46de2c724d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\StatePattern">
+      <UniqueIdentifier>{6c1d010e-3d06-4567-82bb-439a9442567c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CPP-ProjetPumpkinSpiceLatte-PokéDouille.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Pokedouille.cpp">
+      <Filter>Fichiers sources\StrategyPattern</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicAttack.cpp">
+      <Filter>Fichiers sources\StrategyPattern</Filter>
+    </ClCompile>
+    <ClCompile Include="ChargedAttack.hpp">
+      <Filter>Fichiers d%27en-tête\StrategyPattern</Filter>
+    </ClCompile>
+    <ClCompile Include="Charged.cpp">
+      <Filter>Fichiers sources\StrategyPattern</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleState.cpp">
+      <Filter>Fichiers sources\StatePattern</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerTurnState.cpp">
+      <Filter>Fichiers sources\StatePattern</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyTurnState.cpp">
+      <Filter>Fichiers sources\StatePattern</Filter>
+    </ClCompile>
+    <ClCompile Include="AnswerState.hpp">
+      <Filter>Fichiers d%27en-tête\StatePattern</Filter>
+    </ClCompile>
+    <ClCompile Include="AnswerState.cpp">
+      <Filter>Fichiers sources\StatePattern</Filter>
+    </ClCompile>
+    <ClCompile Include="VictoryState.cpp">
+      <Filter>Fichiers sources\StatePattern</Filter>
+    </ClCompile>
+    <ClCompile Include="DefeatState.hpp">
+      <Filter>Fichiers d%27en-tête\StatePattern</Filter>
+    </ClCompile>
+    <ClCompile Include="DefeatState.cpp">
+      <Filter>Fichiers sources\StatePattern</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Attack.hpp">
+      <Filter>Fichiers d%27en-tête\StrategyPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicAttack.hpp">
+      <Filter>Fichiers d%27en-tête\StrategyPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Pokedouille.hpp">
+      <Filter>Fichiers d%27en-tête\StrategyPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Fireball.hpp">
+      <Filter>Fichiers d%27en-tête\StrategyPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleState.hpp">
+      <Filter>Fichiers d%27en-tête\StatePattern</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerTurnState.hpp">
+      <Filter>Fichiers d%27en-tête\StatePattern</Filter>
+    </ClInclude>
+    <ClInclude Include="VictoryState.hpp">
+      <Filter>Fichiers d%27en-tête\StatePattern</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyTurnState.hpp">
+      <Filter>Fichiers d%27en-tête\StatePattern</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,63 +1,72 @@
 // CPP-ProjetPumpkinSpiceLatte-PokéDouille.cpp
 
 #include <iostream>
+#include <chrono>
+#include <thread>
+#include <cstdlib>
+
 #include "PokeDouille.hpp"
-#include "FastAttack.hpp"
-#include "Fireball.hpp"
+#include "BasicAttack.hpp"
+#include "ChargedAttack.hpp"
 #include "BattleState.hpp"
-
-int main1() {
-
-    PokeDouille player("Pikadouille", 50);
-    PokeDouille enemy("Salamouchette", 50);
-
-    FastAttack fast;
-    Fireball fire;
-
-    player.addAttack(&fast);
-    player.addAttack(&fire);
-
-    enemy.addAttack(&fast);
-    enemy.addAttack(&fire);
+#include "PlayerTurnState.hpp"
+#include "EnemyTurnState.hpp"
+#include "AnswerState.hpp"
+#include "VictoryState.hpp"
+#include "DefeatState.hpp"
 
 
-    std::cout << "=== Combat Poke Douille ===\n";
+int main(){
+    std::cout <<
+        R"(
+                                            
+ _ _ _     _                      _____     
+| | | |___| |___ ___ _____ ___   |_   _|___ 
+| | | | -_| |  _| . |     | -_|    | | | . |
+|_____|___|_|___|___|_|_|_|___|    |_| |___|
+                                            
+)";
+    std::this_thread::sleep_for(std::chrono::seconds(5)); //wait 5 sec
 
-    while (player.getHp() > 0 && enemy.getHp() > 0) {
-        // --- Tour du joueur ---
-        std::cout << "\nTes PV : " << player.getHp()
-            << " | PV ennemi : " << enemy.getHp() << "\n";
-        std::cout << "Choisis une attaque :\n";
-        for (size_t i = 0; i < 2; ++i) {
-            std::cout << i << " - " << player.chooseAttack(i)->getName() << "\n";
-        }
+    std::cout <<
+R"(
+$$$$$$$\   $$$$$$\  $$\   $$\ $$$$$$$$\ $$$$$$$\   $$$$$$\  $$\   $$\ $$$$$$\ $$\       $$\       $$$$$$$$\ 
+$$  __$$\ $$  __$$\ $$ | $$  |$$  _____|$$  __$$\ $$  __$$\ $$ |  $$ |\_$$  _|$$ |      $$ |      $$  _____|
+$$ |  $$ |$$ /  $$ |$$ |$$  / $$ |      $$ |  $$ |$$ /  $$ |$$ |  $$ |  $$ |  $$ |      $$ |      $$ |      
+$$$$$$$  |$$ |  $$ |$$$$$  /  $$$$$\    $$ |  $$ |$$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |      $$$$$\    
+$$  ____/ $$ |  $$ |$$  $$<   $$  __|   $$ |  $$ |$$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |      $$  __|   
+$$ |      $$ |  $$ |$$ |\$$\  $$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |      $$ |      
+$$ |       $$$$$$  |$$ | \$$\ $$$$$$$$\ $$$$$$$  | $$$$$$  |\$$$$$$  |$$$$$$\ $$$$$$$$\ $$$$$$$$\ $$$$$$$$\ 
+\__|       \______/ \__|  \__|\________|\_______/  \______/  \______/ \______|\________|\________|\________|                                                                                                                                                                       
+)";
 
-        int choice;
-        std::cin >> choice;
+    std::this_thread::sleep_for(std::chrono::seconds(3));
+    system("cls"); //effacer toutes la console
 
-        if (choice < 0 || choice > 1) choice = 0;
-        Attack* atk = player.chooseAttack(choice);
-        atk->execute(&player, &enemy);
+    // Création des Pokédouilles
+    PokeDouille player("Bubblastea", 200);
+    PokeDouille enemy("Capucciono", 200);
 
-        if (enemy.getHp() <= 0) break;
+    BasicAttack fastAttack("Perle-Canon", 10, 35);
+    BasicAttack heavyAttack("Tourbillon Lait-The", 25, 10);
+    BasicAttack megaPunch("Mega Poing", 40, 5);
+    ChargedAttack laser("Ultralaser", 70, 5);
+    
+    player.addAttack(&fastAttack);
+    player.addAttack(&laser);
+    player.addAttack(&heavyAttack);
 
-        // --- Tour de l'ennemi ---
-        int enemyChoice = rand() % 2;
-        Attack* enemyAtk = enemy.chooseAttack(enemyChoice);
-        enemyAtk->execute(&enemy, &player);
-    }
+    enemy.addAttack(&fastAttack);
+    enemy.addAttack(&megaPunch);
 
-    if (player.getHp() > 0) {
-        std::cout << "\nTu as gagne ! \n";
-    }
-    else {
-        std::cout << "\nTu as perdu... \n";
-    }
+    std::cout << "=== POKEDOUILLE - COMBAT ===\n";
+    std::cout << player.getName() << " VS " << enemy.getName() << "\n";
 
+    BattleContext battle(new PlayerTurnState(), &player, &enemy);
+
+    while (!battle.isBattleEnded()) {battle.update();}
+    
+    std::cout << "\n=== FIN DU COMBAT ===\n";
     return 0;
-}
 
-int main() {
-    ClientCode();
-    return 0;
 }
