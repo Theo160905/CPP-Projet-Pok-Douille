@@ -3,13 +3,20 @@
 #include <iostream>
 #include <string>
 
+/*
+* J'ai essayé de faire à ce que chaques classes aient leurs scriptes.
+* Mais je n'arrivais pas à ce que les classes puissent intéragir entre elles.
+*/
+
 class Fire;
 class Water;
 class Grass;
+class Type;
 
 class Visitor
 {
 public:
+	virtual ~Visitor() {}
 	virtual void VisitFire(const Fire* ty) const = 0;
 	virtual void VisitWater(const Water* ty) const = 0;
 	virtual void VisitGrass(const Grass* ty) const = 0;
@@ -29,7 +36,7 @@ public:
 		visitor->VisitFire(this);
 	};
 	std::string FireFunc() const {
-		return "Fire";
+		return "Feu";
 	};
 };
 
@@ -40,7 +47,7 @@ public:
 		visitor->VisitWater(this);
 	};
 	std::string WaterFunc() const {
-		return "Water";
+		return "Eau";
 	};
 };
 
@@ -51,48 +58,53 @@ public:
 		visitor->VisitGrass(this);
 	};
 	std::string GrassFunc() const {
-		return "Grass";
+		return "Plante";
 	};
 };
 
 class VisitorFire : public Visitor
 {
 public:
-	void VisitFire(const Fire* som) const {
-		std::cout << "visited" << som->FireFunc() << "from Fire\n";
+	void Visitor::VisitFire(const Fire* som) const {
+		std::cout << "L'attaque n'etait pas tres efficace contre le type " << som->FireFunc() << "\n";
 	};
-	void VisitWater(const Water* som) const {
-		std::cout << "visited" << som->WaterFunc() << "from Fire\n";
+	void Visitor::VisitWater(const Water* som) const {
+		std::cout << "L'attaque n'etait pas tres efficace contre le type " << som->WaterFunc() << "\n";
 	};
-	void VisitGrass(const Grass* som) const {
-		std::cout << "visited" << som->GrassFunc() << "from Fire\n";
+	void Visitor::VisitGrass(const Grass* som) const {
+		std::cout << "L'attack etait tres efficace contre le type " << som->GrassFunc() << "\n";
 	};
 };
 
 class VisitorWater : public Visitor
 {
 public:
-	void VisitFire(const Fire* som) const {
-		std::cout << "visited" << som->FireFunc() << "from Water\n";
+	void Visitor::VisitFire(const Fire* som) const {
+		std::cout << "L'attack etait tres efficace contre le type " << som->FireFunc() << "\n";
 	};
-	void VisitWater(const Water* som) const {
-		std::cout << "visited" << som->WaterFunc() << "from Water\n";
+	void Visitor::VisitWater(const Water* som) const {
+		std::cout << "L'attaque n'etait pas tres efficace contre le type " << som->WaterFunc() << "\n";
 	};
-	void VisitGrass(const Grass* som) const {
-		std::cout << "visited" << som->GrassFunc() << "from Water\n";
+	void Visitor::VisitGrass(const Grass* som) const {
+		std::cout << "L'attaque n'etait pas tres efficace contre le type " << som->GrassFunc() << "\n";
 	};
 };
 
 class VisitorGrass : public Visitor
 {
 public:
-	void VisitFire(const Fire* som) const {
-		std::cout << "visited" << som->FireFunc() << "from Grass\n";
+	void Visitor::VisitFire(const Fire* som) const {
+		std::cout << "L'attaque n'etait pas tres efficace contre le type " << som->FireFunc() << "\n";
 	};
-	void VisitWater(const Water* som) const {
-		std::cout << "visited" << som->WaterFunc() << "from Grass\n";
+	void Visitor::VisitWater(const Water* som) const {
+		std::cout << "L'attack etait tres efficace contre le type " << som->WaterFunc() << "\n";
 	};
-	void VisitGrass(const Grass* som) const {
-		std::cout << "visited" << som->GrassFunc() << "from Grass\n";
+	void Visitor::VisitGrass(const Grass* som) const {
+		std::cout << "L'attaque n'etait pas tres efficace contre le type " << som->GrassFunc() << "\n";
 	};
+};
+
+class CheckTypes {
+public:
+	void CheckTypesMatchup(const Type* typePlayer,const Type* typeEnnemi);
 };
